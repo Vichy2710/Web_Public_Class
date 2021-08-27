@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Trần Dương</title>
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://images.pexels.com/photos/4100130/pexels-photo-4100130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+        ::selection{
+            background-color: rgb(85, 4, 31);
+            color: white;
+        }
+        .header{
+            position: fixed;
+            z-index: 1;
+            top:0;
+            left: 0;
+            right: 0;
+            height: 90px;
+            background-color: #222328;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .header-name{
+            margin: auto;
+            font-size: 45px;
+            font-weight: 700;
+            color: white;
+        }
+        .header-list{
+            color: #ccc;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-around;
+            column-gap: 2rem;
+            font-size: 18px;
+            margin: auto;
+        }
+        .header-list li:hover{
+            transform: scale(1.2);
+        }
+        .main{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 120px;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.3);
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .main-title{
+            font-size: 35px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+        .main-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .col1{
+            width: 45%;
+        
+        }
+        .content-title{
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .content-sub{
+            color: rgb(219, 150, 162);
+            text-transform: uppercase;
+            font-weight: 600;   
+            position: relative;
+            padding-left: 20px;
+        }
+        .content-sub i{
+            position: absolute;
+            font-size: larger;
+            margin-left: -22px;
+        }
+        .content-text{
+            font-style: italic;
+            color: white;
+            padding-left: 20px;
+            padding-top: 16px;
+            border-left: rgb(209, 208, 208) solid;
+            margin-left: 6px;
+        }
+        .content-list{
+            padding-left: 20px;
+            padding-top: 16px;
+            border-left: rgb(209, 208, 208) solid;
+            margin-left: 6px;
+            padding-bottom:10px;
+            color: white;
+            line-height: 25px;
+        }
+        .content-list li{
+            margin-bottom: 10px;
+        }
+        .box-in-edu{
+            padding-left: 20px;
+            padding-top: 16px;
+            border-left: rgb(209, 208, 208) solid;
+            margin-left: 6px;
+            padding-top: 16px;
+            color: white;
+            width: 6rem;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            background-color: rgba(255,255,255,0.4);
+            background-clip: content-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: oblique;
+        }
+        .edu-content{
+            padding-left: 20px;
+            border-left: rgb(209, 208, 208) solid;
+            margin-left: 6px;
+            padding-bottom:30px;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="104_NgoTrieuVi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-name">
+            Trần Dương
+        </div>
+        <div class="header-list">
+            <li>Home</li>
+            <li>About</li>
+            <li style="color: white">Resume</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-title">
+            CHECK MY RESUME
+        </div>
+        <div class="main-content">
+            <div class="col1">
+                <!-- Summary -->
+                <div class="content-title">
+                    Summary
+                </div>
+                <div class="content-sub">
+                    <i class="fas fa-circle"></i> &#160; Alice Barkley
+                </div>
+                <div class="content-text">
+                    Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+                </div>
+                <div class="content-list">
+                    <li>Portland par 127,Orlando, FL</li>
+                    <li>(123) 456-7891</li>
+                    <li>alice.barkley@example.com</li>
+                </div>
+                <!-- Education -->
+                <div class="content-title">
+                    Education
+                </div>
+                <!-- Alice Barkley -->
+                <div class="content-sub">
+                    <i class="fas fa-circle"></i> &#160; Alice Barkley
+                </div>
+                <div class="box-in-edu">
+                    2015 - 2016
+                </div>
+                <div class="content-text">
+                    Rochester Institute of Technology, Rochester, NY                </div>
+                <div class="content-list">
+                    
+                </div>
+                <div class="edu-content">
+                    Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend                </div>
+                <!-- Bachelor -->
+                <div class="content-sub">
+                    <i class="fas fa-circle"></i> &#160; BACHELOR OF FINE ARTS & GRAPHIC DESIGN
+                </div>
+                <div class="box-in-edu">
+                    2010 - 2014
+                </div>
+                <div class="content-text">
+                    Rochester Institute of Technology, Rochester, NY                </div>
+                <div class="content-list">
+                    
+                </div>
+                <div class="edu-content" style="padding-bottom:10px;">
+                    Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila                </div>
+            </div>
+            <div class="col1">
+                <!-- Professional Experience -->
+                <div class="content-title">
+                    Professional Experience
+                </div>
+                <div class="content-sub">
+                    <i class="fas fa-circle"></i> &#160; SENIOR GRAPHIC DESIGN SPECIALIST
+                </div>
+                <div class="box-in-edu" style="width: 9rem;">
+                    2019 - Present
+                </div>
+                <div class="content-text">
+                    Experion, New York, NY               
+                </div>
+                <div class="content-list">
+                    <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                    <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                    <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                </div>
+                <!-- GRAPHIC DESIGN SPECIALIST -->
+                <div class="content-title">
+                    GRAPHIC DESIGN SPECIALIST 
+                </div>
+                <div class="content-sub">
+                    <i class="fas fa-circle"></i> &#160; SENIOR GRAPHIC DESIGN SPECIALIST
+                </div>
+                <div class="box-in-edu" style="width: 9rem;">
+                    2017 - 2018
+                </div>
+                <div class="content-text">
+                    Stepping Stone Advertising, New York, NY             
+                </div>
+                <div class="content-list" style="padding-bottom: 3px;">
+                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
